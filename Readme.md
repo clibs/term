@@ -3,6 +3,12 @@
 
   Terminal goodies.
 
+## Example
+
+  Check out ./example.c:
+
+  ![](http://f.cl.ly/items/3Z2B0G2t0O323r3k2I2N/Screen%20Shot%202012-07-03%20at%2011.11.18%20PM.png)
+
 ## API
 
 ```c
