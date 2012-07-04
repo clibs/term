@@ -1,7 +1,16 @@
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
+#include <signal.h>
 #include "src/term.h"
+
+void
+on_sigint(int sig) {
+  term_clear("screen");
+  term_show_cursor();
+  exit(1);
+}
 
 void
 show(float data[]) {
@@ -51,6 +60,8 @@ show(float data[]) {
 
 int
 main(int argc, char **argv){
+  term_hide_cursor();
+  signal(SIGINT, on_sigint);
 
 start:
   {
