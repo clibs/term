@@ -14,7 +14,9 @@ main(int argc, char **argv){
   term_color("green");
   printf("ok\n");
 
+  term_bold();
   term_color("red");
+  term_background("red");
   printf("fail");
   term_reset();
 
