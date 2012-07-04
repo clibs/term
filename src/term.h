@@ -31,14 +31,23 @@
 #define term_hide_cursor() term_write("?25l")
 #define term_show_cursor() term_write("?25h")
 
+// movement
+
+void
+term_move_by(int x, int y);
+
 void
 term_move_to(int x, int y);
+
+// erasing
 
 const char *
 term_erase_from_name(const char *name);
 
 int
 term_erase(const char *name);
+
+// colors
 
 int
 term_color_from_name(const char *name);

@@ -10,12 +10,35 @@
 #include "term.h"
 
 /*
+ * X pos.
+ */
+
+static int _x = 0;
+
+/*
+ * Y pos.
+ */
+
+static int _y = 0;
+
+/*
  * Move to `(x, y)`.
  */
 
 void
 term_move_to(int x, int y) {
+  _x = x;
+  _y = y;
   printf("\e[%d;%d;f", y, x);
+}
+
+/*
+ * Move by `(x, y)`.
+ */
+
+void
+term_move_by(int x, int y) {
+  term_move_to(_x + x, _y + y);
 }
 
 /*

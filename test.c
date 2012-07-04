@@ -20,6 +20,8 @@ main(int argc, char **argv){
 
   term_move_to(50, 10);
   printf("hey");
+  term_move_by(1, 1);
+  printf("there");
   term_move_to(0, 15);
   
 
