@@ -7,7 +7,7 @@
 
   Check out ./example.c:
 
-  ![](http://f.cl.ly/items/372C3w1L0X1s2A3m1H2E/Screen%20Shot%202012-07-03%20at%2011.14.06%20PM.png)
+  ![](http://f.cl.ly/items/2q2S3s3g0E122N0O2521/Screen%20Shot%202012-07-03%20at%2011.27.19%20PM.png)
 
 ## API
 
