@@ -27,7 +27,7 @@ show(float data[]) {
   term_move_to(pad, 1);
   while (n < (h - pad - 1)) {
     term_move_by(0, 2);
-    printf("-");
+    printf("․");
     n += 2;
   }
 
@@ -35,7 +35,7 @@ show(float data[]) {
   n = 0;
   term_move_to(pad, h - 2);
   while (n < (w - pad * 3)) {
-    printf("-");
+    printf("․");
     term_move_by(6, 0);
     n += 6;
   }
