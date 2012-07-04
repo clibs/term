@@ -31,6 +31,11 @@
 #define term_hide_cursor() term_write("?25l")
 #define term_show_cursor() term_write("?25h")
 
+// size
+
+void
+term_size(int *width, int *height);
+
 // movement
 
 void

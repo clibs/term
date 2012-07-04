@@ -23,7 +23,10 @@ main(int argc, char **argv){
   term_move_by(1, 1);
   printf("there");
   term_move_to(0, 15);
-  
+
+  int w = 0, h = 0;
+  term_size(&w, &h);
+  printf("%dx%d\n", w, h);
 
   return 0;
 }
