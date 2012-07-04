@@ -33,7 +33,7 @@
 
 // size
 
-void
+int
 term_size(int *width, int *height);
 
 // movement

@@ -6,7 +6,6 @@
 //
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include <sys/ioctl.h>
 #include "term.h"
@@ -47,15 +46,11 @@ term_move_by(int x, int y) {
  * Set `w` and `h` to the terminal dimensions.
  */
 
-void
+int
 term_size(int *w, int *h) {
   struct winsize ws;
-
-  if (ioctl(0, TIOCGWINSZ, &ws) < 0) {
-    perror("ioctl()");
-    exit(1);
-  }
-
+  int ret = ioctl(0, TIOCGWINSZ, &ws);
+  if (ret < 0) return ret;
   *w = ws.ws_col;
   *h = ws.ws_row;
 }
