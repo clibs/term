@@ -113,6 +113,12 @@ term_color_from_name(const char *name) {
 
 int
 term_color(const char *name) {
+  // TODO: refactor term_color_from_name()
+  if (!strcmp("gray", name) || !strcmp("grey", name)) {
+    printf("\e[90m");
+    return 0;
+  }
+
   int n = term_color_from_name(name);
   if (-1 == n) return n;
   printf("\e[3%dm", n);
