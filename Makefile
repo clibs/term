@@ -2,4 +2,7 @@
 test: test.c src/term.c
 	$(CC) $^ -o $@
 
-.PHONY: test
+example: example.c src/term.c
+	$(CC) -std=c99 $^ -o $@
+
+.PHONY: test example

@@ -10,6 +10,7 @@
 // aliases
 
 #define term_bold term_bright
+#define term_clear term_erase
 
 // display
 
