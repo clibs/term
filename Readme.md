@@ -6,6 +6,7 @@
 ## API
 
 ```c
+
 // aliases
 
 #define term_bold term_bright
