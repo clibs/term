@@ -1,7 +1,7 @@
 {
   "name": "term",
   "version": "0.0.1",
-  "repo": "visionmedia/term",
+  "repo": "visionmedia/term.c",
   "description": "Terminal ansi escape goodies",
   "keywords": ["terminal", "term", "tty", "ansi", "escape", "colors", "console"],
   "license": "MIT",
