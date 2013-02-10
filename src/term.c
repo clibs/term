@@ -62,12 +62,12 @@ term_size(int *w, int *h) {
 
 const char *
 term_erase_from_name(const char *name) {
-  if (!strcmp("end", name)) return "K";
-  if (!strcmp("start", name)) return "1K";
-  if (!strcmp("line", name)) return "2K";
-  if (!strcmp("up", name)) return "1J";
-  if (!strcmp("down", name)) return "J";
-  if (!strcmp("screen", name)) return "1J";
+  if (*name == 'e' && !strcmp("end", name))    return "K";
+  if (*name == 's' && !strcmp("start", name))  return "1K";
+  if (*name == 'l' && !strcmp("line", name))   return "2K";
+  if (*name == 'u' && !strcmp("up", name))     return "1J";
+  if (*name == 'd' && !strcmp("down", name))   return "J";
+  if (*name == 's' && !strcmp("screen", name)) return "1J";
   return NULL;
 }
 
@@ -97,14 +97,14 @@ term_erase(const char *name) {
 
 int
 term_color_from_name(const char *name) {
-  if (!strcmp("black", name)) return 0;
-  if (!strcmp("red", name)) return 1;
-  if (!strcmp("green", name)) return 2;
-  if (!strcmp("yellow", name)) return 3;
-  if (!strcmp("blue", name)) return 4;
-  if (!strcmp("magenta", name)) return 5;
-  if (!strcmp("cyan", name)) return 6;
-  if (!strcmp("white", name)) return 7;
+  if (*name == 'b' && !strcmp("black", name))   return 0;
+  if (*name == 'r' && !strcmp("red", name))     return 1;
+  if (*name == 'g' && !strcmp("green", name))   return 2;
+  if (*name == 'y' && !strcmp("yellow", name))  return 3;
+  if (*name == 'b' && !strcmp("blue", name))    return 4;
+  if (*name == 'm' && !strcmp("magenta", name)) return 5;
+  if (*name == 'c' && !strcmp("cyan", name))    return 6;
+  if (*name == 'w' && !strcmp("white", name))   return 7;
   return -1;
 }
 
