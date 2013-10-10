@@ -9,6 +9,14 @@
 
   ![](http://f.cl.ly/items/2q2S3s3g0E122N0O2521/Screen%20Shot%202012-07-03%20at%2011.27.19%20PM.png)
 
+## Installation
+
+  Install with [clib](https://github.com/clibs/clib):
+
+```
+$ clib install clibs/term
+```
+
 ## API
 
 ```c
