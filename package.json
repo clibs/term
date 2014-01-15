@@ -3,7 +3,22 @@
   "version": "0.0.2",
   "repo": "clibs/term",
   "description": "Terminal ansi escape goodies",
-  "keywords": ["terminal", "term", "tty", "ansi", "escape", "colors", "console"],
+  "keywords": [
+    "terminal",
+    "term",
+    "tty",
+    "ansi",
+    "escape",
+    "colors",
+    "console"
+  ],
   "license": "MIT",
-  "src": ["src/term.c", "src/term.h"]
+  "src": [
+    "src/term.c",
+    "src/term.h"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visionmedia/term.c.git"
+  }
 }
